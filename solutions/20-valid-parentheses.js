@@ -15,7 +15,7 @@ var isValid = function(s) {
             stillOpen.pop();
         else if(s[i] === ']' && stillOpen[stillOpen.length -1] === '[')
             stillOpen.pop();
-        else if(s[i] === '{' && stillOpen[stillOpen.length -1] === '}')
+        else if(s[i] === '}' && stillOpen[stillOpen.length -1] === '{')
             stillOpen.pop();
         else {
             stillOpen.push(s[i])
