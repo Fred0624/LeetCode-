@@ -6,4 +6,5 @@
 
 var isPowerOfFour = function(n) {
     return Number.isInteger(Math.log(n) / Math.log(4))
+    //return Number.isInteger(Math.log4(n))
 };
