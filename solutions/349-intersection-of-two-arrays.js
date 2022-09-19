@@ -1,0 +1,15 @@
+// Given two integer arrays nums1 and nums2, return an array of their intersection. Each element in the result must be unique and you may return the result in any order.
+
+var intersection = function(nums1, nums2) {
+    let result = [];
+    let setNum1 = new Set(nums1);
+    let setNum2 = new Set(nums2);
+
+    let [smallSet , largeSet] = (setNum1.length < setNum2.length) ? [setNum1 , setNum2] : [setNum2 , setNum1];
+
+    smallSet.forEach( num => {
+        largeSet.has(num) && result.push(num);
+    });
+
+    return result;
+};
