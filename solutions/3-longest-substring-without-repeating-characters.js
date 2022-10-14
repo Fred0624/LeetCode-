@@ -27,7 +27,7 @@ var lengthOfLongestSubstring = function(s) {
             break
             else sub += s[j]
         }
-                dis = Math.max(sub.length, dis)
+        dis = Math.max(sub.length, dis)
             
     }
     return dis
